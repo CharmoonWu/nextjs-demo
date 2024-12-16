@@ -39,7 +39,9 @@ export default function RootLayout({
           </header>
 
           <Providers>
-            <main className="p-6">{children}</main>
+            <main className="p-6 w-screen h-[calc(100vh-92px-56px)] overflow-x-hidden overflow-y-auto">
+              {children}
+            </main>
           </Providers>
 
           <footer className="bg-slate-900 text-white p-4 text-center absolute bottom-0 w-full">
